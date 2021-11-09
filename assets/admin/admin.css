@@ -1,0 +1,46 @@
+/****************************SOUMYAJEET CSS****************************/
+.addIternary{
+    float: right;
+    margin: -120px;
+    margin-top: -25px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 8px;
+    color: green;
+    /*color: #3c8dbc;*/
+}
+
+.addIternary > i > a{color: green;}
+
+.removeIternary{
+    float: right;
+    margin: -240px;
+    margin-top: -25px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 8px;
+    color: red;
+}
+
+.removeIternary > i > a{color: red;}
+
+.deleteIternary{
+    float: right;
+    margin: -360px;
+    margin-top: -25px;
+    margin-top: 30px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 8px;
+    color: red;
+}
+.deleteIternary > i > a{color: red;}
+
+.deleteDomImg{position: absolute; padding-left: 225px; font-size: 22px; color:red;cursor: pointer;}
+.relatedImg{margin-right: 15px; margin-bottom: 15px;}
+/****************************SOUMYAJEET CSS****************************/
