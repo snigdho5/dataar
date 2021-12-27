@@ -75,7 +75,7 @@ class Api extends REST_Controller
             $password   = xss_clean((isset($postData['password'])) ? $postData['password'] : '');
             $usertype   = xss_clean((isset($postData['usertype'])) ? $postData['usertype'] : '');
             $device_id   = xss_clean((isset($postData['device_id'])) ? $postData['device_id'] : '');
-            $device_type   = xss_clean((isset($postData['device_type'])) ? $postData['donation_id'] : '');
+            $device_type   = xss_clean((isset($postData['device_type'])) ? $postData['device_type'] : '');
             $fcm_token   = xss_clean((isset($postData['fcm_token'])) ? $postData['fcm_token'] : '');
         }
         //exit();
