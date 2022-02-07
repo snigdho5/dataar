@@ -85,17 +85,7 @@ class Admin_model extends CI_Model
     {
         $this->db->select('*')
             ->from('campaign_master')
-            ->join('users', 'campaign_master.campaign_id = users.user_id', 'left')
-            ->where('campaign_type' , '0');
-        return $this->db->get();
-    }
-
-    public function fetch_dtb_1rs_campaign()
-    {
-        $this->db->select('*')
-            ->from('campaign_master')
-            ->join('users', 'campaign_master.campaign_id = users.user_id', 'left')
-            ->where('campaign_type' , '1');
+            ->join('users', 'campaign_master.campaign_id = users.user_id', 'left');
         return $this->db->get();
     }
 
@@ -133,25 +123,6 @@ class Admin_model extends CI_Model
             ->where_not_in('`donation_master`.`amountpaid`', 0)
             ->join('users', 'donation_master.user_id = users.user_id')
             ->join('campaign_master', 'donation_master.campaign_id = campaign_master.campaign_id', 'left');
-        return $this->db->get();
-        //echo $this->db->last_query();
-    }
-
-    public function fetch_donations_1rs()
-    {
-        $this->db->select('
-                    CONCAT(`users`.`first_name`, `users`.`last_name`) as user,
-                    `users`.`phone`,
-                    `donation_master`.`amountpaid` as donation_amount,
-                    `campaign_master`.`campaign_name` as campaign,
-                    `campaign_master`.`campaign_start_date` as start,
-                    `campaign_master`.`campaign_end_date` as expiry,                    
-                ')
-            ->from('donation_master')
-            ->join('users', 'donation_master.user_id = users.user_id')
-            ->join('campaign_master', 'donation_master.campaign_id = campaign_master.campaign_id', 'left')
-            ->where('`donation_master`.`campaign_type`', 1)
-            ->where_not_in('`donation_master`.`amountpaid`', 0);
         return $this->db->get();
         //echo $this->db->last_query();
     }

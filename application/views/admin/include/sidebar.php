@@ -118,6 +118,7 @@
                     <li>
                         <a href="<?= base_url('admin/campaigns') ?>"><i class="fa fa-list text-aqua"></i> List </a>
                         <a href="<?= base_url('admin/campaigns_filter_by_type') ?>"><i class="fa fa-list text-aqua"></i> Filter By Type</a>
+                        <!-- <a href="<?= base_url('admin/campaigns_1rs') ?>"><i class="fa fa-list text-aqua"></i>1 Rupee Campaign </a> -->
                     </li>                    
                 </ul>
             </li>
@@ -153,6 +154,9 @@
                     </li> 
                     <li>
                         <a href="<?= base_url('admin/cashlist') ?>"><i class="fa fa-list text-aqua"></i> Cash List </a>
+                    </li>
+                    <li>
+                        <a href="<?= base_url('admin/cashlist_1rs') ?>"><i class="fa fa-list text-aqua"></i> Rs. 1 Donation List </a>
                     </li>
                 </ul>
             </li>
